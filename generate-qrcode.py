@@ -12,8 +12,8 @@ def generate_qr():
     # Generate QR code
     qr_img = qrcode.make(url)
     
-    # Display QR code in the GUI
-    qr_img_resized = qr_img.resize((300, 300))  # Resize to fit GUI
+    # GUI
+    qr_img_resized = qr_img.resize((300, 300))  
     qr_img_tk = ImageTk.PhotoImage(qr_img_resized)
     qr_label.config(image=qr_img_tk)
     qr_label.image = qr_img_tk
